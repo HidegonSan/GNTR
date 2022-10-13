@@ -8,7 +8,7 @@ def main():
 	pid = 40
 	Process = GNTR(ip, pid)
 	Process.connect()
-	print(Process.read32(0x100000))
+	print(hex(Process.read32(0x100000)))
 	Process.disconnect()
 	Process.quit()
 
